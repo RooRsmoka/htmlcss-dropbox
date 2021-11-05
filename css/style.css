@@ -8,8 +8,13 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-.container-xl {
+.jumbotron {
     width: 1400px;
+    margin: 0 auto;
+}
+
+.container {
+    width: 1200px;
     margin: 0 auto;
 }
 
@@ -25,6 +30,15 @@ body {
     content: "";
     display: table;
     clear: both;
+}
+
+.side {
+    width: calc(33% - 60px);
+}
+
+.central {
+    margin: 0 60px;
+    width: calc(33% - 60px);
 }
 
 .blue-button {
@@ -76,7 +90,7 @@ nav {
     margin-left: 10px;
 }
 
-.start {
+.start-button {
     padding: 6px 12px;
 }
 /* / Nav-bar */
@@ -97,7 +111,7 @@ h1 {
 
 .cancel {
     font-size: 14px;
-    margin-bottom: 45px;
+    margin-bottom: 40px;
 }
 
 .jumbo-image {
@@ -109,3 +123,128 @@ h1 {
     margin-bottom: -90px;
 }
 /* / Jumbotron */
+
+/* Main */
+main {
+    margin-top: 200px;
+}
+/* / Main */
+
+/* Pricing title */
+.pricing-title {
+    font-size: 44px;
+    margin-bottom: 40px;
+}
+/* Pricing title */
+
+/* Pricing box */
+.content-box {
+    height: 1050px;
+    margin-top: 30px;
+    border: 2px #D0D0D3 solid;
+}
+
+.target {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 2px #D0D0D3 solid;
+}
+
+.target.private::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f007";
+    padding-right: 3px;
+}
+
+.target.team::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f1ad";
+    padding-right: 3px;
+}
+
+.account-box {
+    padding: 30px 30px;
+}
+
+.account-price {
+    margin-bottom: 40px;
+}
+
+h3 {
+    font-size: 26px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+h4 {
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+.grey-text{
+    color: #4c6f88;
+}
+
+.account-list {
+    font-weight: bold;
+    list-style: none;
+}
+
+.account-list li {
+    font-weight: normal;
+    margin: 20px 0;
+}
+
+.free-trial-account button {
+    width: 100%;
+    margin: 20px 0 25px ;
+}
+
+.buy-now {
+    color: #0063FF;
+}
+
+.hr {
+    width: 20%;
+    border: 1px #D0D0D3 solid;
+    margin: 30px 0 40px 0;
+}
+
+.user::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f007";
+    padding-right: 3px;
+}
+
+.users::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f234";
+    padding-right: 3px;
+}
+
+.storage::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f07b";
+    padding-right: 3px;
+}
+
+.production::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f303";
+    padding-right: 3px;
+}
+
+.check::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f00c";
+    color: #0063FF;
+    padding-right: 3px;
+}
+/* / Main */
