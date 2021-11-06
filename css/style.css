@@ -18,6 +18,10 @@ body {
     margin: 0 auto;
 }
 
+.container-xl {
+    width: 100%;
+}
+
 .fl {
     float: left;
 }
@@ -37,8 +41,12 @@ body {
 }
 
 .central {
-    margin: 5%;
+    margin: 0 5%;
     width: 30%;
+}
+
+.title {
+    font-size: 44px;
 }
 
 .blue-button {
@@ -46,6 +54,10 @@ body {
     color: #fff;
     border: 1px #0063FF solid;
     padding: 8px 16px;
+}
+
+.text-link {
+    color: #1871ff;
 }
 /*************************************/
 /* Header */
@@ -132,7 +144,6 @@ main {
 
 /* Pricing title */
 .pricing-title {
-    font-size: 44px;
     margin-bottom: 40px;
 }
 /* Pricing title */
@@ -144,7 +155,8 @@ main {
     border: 2px #D0D0D3 solid;
 }
 
-.content-box-sm {
+.content-box-lg {
+    margin-top: 50px;
     border: 2px #D0D0D3 solid;
 }
 
@@ -156,14 +168,14 @@ main {
 
 .target.private::before {
     font-family: "Font Awesome 5 Free";
-    font-weight: 900;
+    font-weight: 400;
     content: "\f007";
     padding-right: 3px;
 }
 
 .target.team::before {
     font-family: "Font Awesome 5 Free";
-    font-weight: 900;
+    font-weight: 400;
     content: "\f1ad";
     padding-right: 3px;
 }
@@ -191,18 +203,6 @@ h4 {
     color: #4c6f88;
 }
 
-.enterprise {
-    width: calc();
-}
-
-.enterprise-button {
-    width: calc();
-}
-
-.enterprise-button button {
-    width: 100%;
-}
-
 .enterprise-text {
     margin-top: 25px;
 }
@@ -222,16 +222,50 @@ h4 {
     margin: 20px 0 25px ;
 }
 
-.buy-now {
-    color: #0063FF;
-}
-
 .hr {
     width: 20%;
     border: 1px #D0D0D3 solid;
     margin: 30px 0 40px 0;
 }
 
+.user::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    content: "\f007";
+    padding-right: 3px;
+}
+
+.users::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f234";
+    padding-right: 3px;
+}
+
+.storage::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    content: "\f07b";
+    padding-right: 3px;
+}
+
+.production::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f303";
+    padding-right: 3px;
+}
+
+.check::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f00c";
+    color: #0063FF;
+    padding-right: 3px;
+}
+/* / Pricing */
+
+/* Partner */
 .partner-container {
     margin-top: 150px;
 }
@@ -251,6 +285,7 @@ h4 {
 }
 
 .partner-text p {
+    line-height: 30px;
     margin: 30px 0 25px 0;
 }
 
@@ -260,40 +295,20 @@ h4 {
     padding: 10px 20px;
     border: 1px #000 solid;
 }
+/* / Partner */
 
-.user::before {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: "\f007";
-    padding-right: 3px;
+/* Function */
+.function-title {
+    margin: 100px 0 30px 0;
 }
 
-.users::before {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: "\f234";
-    padding-right: 3px;
+.function-image img {
+    width: 100%;
 }
 
-.storage::before {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: "\f07b";
-    padding-right: 3px;
+.function-text {
+    margin: 20px 0 80px 0;
+    line-height: 22px;
 }
-
-.production::before {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: "\f303";
-    padding-right: 3px;
-}
-
-.check::before {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: "\f00c";
-    color: #0063FF;
-    padding-right: 3px;
-}
+/* Function */
 /* / Main */
