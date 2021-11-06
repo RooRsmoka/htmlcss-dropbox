@@ -33,12 +33,12 @@ body {
 }
 
 .side {
-    width: calc(33% - 60px);
+    width: 30%;
 }
 
 .central {
-    margin: 0 60px;
-    width: calc(33% - 60px);
+    margin: 5%;
+    width: 30%;
 }
 
 .blue-button {
@@ -144,6 +144,10 @@ main {
     border: 2px #D0D0D3 solid;
 }
 
+.content-box-sm {
+    border: 2px #D0D0D3 solid;
+}
+
 .target {
     padding: 12px;
     text-align: center;
@@ -187,6 +191,22 @@ h4 {
     color: #4c6f88;
 }
 
+.enterprise {
+    width: calc();
+}
+
+.enterprise-button {
+    width: calc();
+}
+
+.enterprise-button button {
+    width: 100%;
+}
+
+.enterprise-text {
+    margin-top: 25px;
+}
+
 .account-list {
     font-weight: bold;
     list-style: none;
@@ -210,6 +230,35 @@ h4 {
     width: 20%;
     border: 1px #D0D0D3 solid;
     margin: 30px 0 40px 0;
+}
+
+.partner-container {
+    margin-top: 150px;
+}
+
+.partner-image {
+    width: calc(60% - 30px);
+}
+
+.partner-image img {
+    width: 100%;
+}
+
+.partner-text {
+    margin-top: 60px;
+    margin-left: 30px;
+    width: calc(40% - 30px);
+}
+
+.partner-text p {
+    margin: 30px 0 25px 0;
+}
+
+.partner-button {
+    font-weight: bold;
+    background-color: #fff;
+    padding: 10px 20px;
+    border: 1px #000 solid;
 }
 
 .user::before {
