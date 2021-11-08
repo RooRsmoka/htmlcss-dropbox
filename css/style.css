@@ -8,7 +8,7 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-.jumbotron {
+.container-xl {
     width: 1400px;
     margin: 0 auto;
 }
@@ -16,10 +16,6 @@ body {
 .container {
     width: 1200px;
     margin: 0 auto;
-}
-
-.container-xl {
-    width: 100%;
 }
 
 .fl {
@@ -37,16 +33,16 @@ body {
 }
 
 .side {
-    width: 30%;
+    width: calc((100% / 3) - (96px / 3));
 }
 
 .central {
-    margin: 0 5%;
-    width: 30%;
+    width: calc((100% / 3) - (96px / 3));
+    margin: 0 48px;
 }
 
 .title {
-    font-size: 44px;
+    font-size: 40px;
 }
 
 .blue-button {
@@ -57,7 +53,8 @@ body {
 }
 
 .text-link {
-    color: #1871ff;
+    color: #2d7cfa;
+    font-weight: bold;
 }
 /*************************************/
 /* Header */
@@ -110,20 +107,19 @@ nav {
 /* Jumbotron */
 h1 {
     font-size: 85px;
-    margin: 60px 0 40px 0;
+}
+
+.jumbotron {
+    padding-top: 50px;
 }
 
 .jumbo-content {
     width: calc(30% - 30px);
 }
 
-.free-trial {
-    margin: 25px 0 10px 0;
-}
-
 .cancel {
     font-size: 14px;
-    margin-bottom: 40px;
+    padding: 15px 0 30px 0;
 }
 
 .jumbo-image {
@@ -138,17 +134,15 @@ h1 {
 
 /* Main */
 main {
-    margin-top: 200px;
+    padding-top: 200px;
 }
 /* / Main */
 
-/* Pricing title */
+/* Pricing */
 .pricing-title {
     margin-bottom: 40px;
 }
-/* Pricing title */
 
-/* Pricing box */
 .content-box {
     height: 1050px;
     margin-top: 30px;
@@ -223,9 +217,9 @@ h4 {
 }
 
 .hr {
-    width: 20%;
+    width: 55px;
     border: 1px #D0D0D3 solid;
-    margin: 30px 0 40px 0;
+    margin: 30px 0 50px 0;
 }
 
 .user::before {
@@ -271,7 +265,7 @@ h4 {
 }
 
 .partner-image {
-    width: calc(60% - 30px);
+    width: 60%;
 }
 
 .partner-image img {
@@ -279,9 +273,8 @@ h4 {
 }
 
 .partner-text {
-    margin-top: 60px;
-    margin-left: 30px;
-    width: calc(40% - 30px);
+    padding: 60px 0 0 30px;
+    width: 40%;
 }
 
 .partner-text p {
@@ -307,8 +300,113 @@ h4 {
 }
 
 .function-text {
-    margin: 20px 0 80px 0;
+    padding: 20px 0 80px 0;
     line-height: 22px;
 }
 /* Function */
+
+/* Network */
+
+.network-title {
+    margin-bottom: 30px;
+}
+
+.side-network {
+    width: 30%;
+}
+
+.main-network {
+    width: 40%;
+    background-color: #F5F5F5;
+    padding: 40px 40px;
+}
+
+.main-network-image {
+    width: 30%;
+}
+
+.main-network-image img {
+    width: 100%;
+}
+
+.quote-author {
+    padding: 40px 0 50px 0;
+}
+
+.network-image {
+    width: 50%;
+    text-align: center;
+}
+
+.network-image img {
+    width: 50%;
+}
+
+.bg-1 {
+    background-color: #94D595;
+}
+
+.bg-2 {
+    background-color: #6B002B;
+}
+
+.bg-3 {
+    background-color: #0096D3;
+}
+
+.bg-4 {
+    background-color: #FF0000;
+}
+
+.bg-5 {
+    background-color: #E90006;
+}
+
+.bg-6 {
+    background-color: #ADD1EA;
+}
+
+.bg-7 {
+    background-color: #022486;
+}
+
+.bg-8 {
+    background-color: #FFD600;
+}
+
+.container-bg {
+    background-color: #ADD1EA;
+}
+
+.free-trial-container {
+    padding: 100px 0;
+}
+/* / Network */
+
+/* Faq */
+.faq-container {
+    padding: 80px 0;
+}
+
+.faq-title {
+    border-bottom: 1px #D0D0D3 solid;
+    padding-bottom: 40px;
+}
+
+.faq-question {
+    border-bottom: 1px #D0D0D3 solid;
+    font-weight: bold;
+    padding: 25px 0;
+    position: relative;
+}
+
+.faq-question::after {
+    content: "\f078";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    right: 30px;
+}
+/* / Faq */
+
 /* / Main */
