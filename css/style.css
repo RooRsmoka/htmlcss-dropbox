@@ -41,10 +41,6 @@ body {
     margin: 0 48px;
 }
 
-.title {
-    font-size: 40px;
-}
-
 .blue-button {
     background-color: #0063FF;
     color: #fff;
@@ -56,7 +52,33 @@ body {
     color: #2d7cfa;
     font-weight: bold;
 }
-/*************************************/
+
+.filter {
+    filter: invert(100%);
+}
+
+h1 {
+    font-size: 80px;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+h4 {
+    font-weight: bold;
+    padding: 10px 0;
+}
+/*******************************************/
+
 /* Header */
 header {
     background-color: #ADD1EA;
@@ -80,16 +102,16 @@ nav {
     vertical-align: text-bottom;
 }
 
-.list {
+.nav-list {
     display: inline-block;
 }
 
-.list li {
+.nav-list li {
     display: inline-block;
     margin: 0 20px 0 20px;
 }
 
-.list a {
+.nav-list a {
     color: #000;
     text-decoration: none;
 }
@@ -105,21 +127,21 @@ nav {
 /* / Nav-bar */
 
 /* Jumbotron */
-h1 {
-    font-size: 85px;
-}
-
 .jumbotron {
     padding-top: 50px;
 }
 
 .jumbo-content {
-    width: calc(30% - 30px);
+    width:calc(30% - 30px);
+    margin-right: 60px;
+}
+
+.jumbo-content button {
+    margin-top: 20px;
 }
 
 .cancel {
-    font-size: 14px;
-    padding: 15px 0 30px 0;
+    padding: 10px 0 40px 0;
 }
 
 .jumbo-image {
@@ -132,15 +154,17 @@ h1 {
 }
 /* / Jumbotron */
 
-/* Main */
-main {
-    padding-top: 200px;
-}
-/* / Main */
-
 /* Pricing */
+.pricing-container {
+    margin-top: 200px;
+}
+
 .pricing-title {
-    margin-bottom: 40px;
+    padding-bottom: 40px;
+}
+
+.payment-period {
+    margin-right: 15px;
 }
 
 .content-box {
@@ -149,22 +173,10 @@ main {
     border: 2px #D0D0D3 solid;
 }
 
-.content-box-lg {
-    margin-top: 50px;
-    border: 2px #D0D0D3 solid;
-}
-
 .target {
     padding: 12px;
     text-align: center;
     border-bottom: 2px #D0D0D3 solid;
-}
-
-.target.private::before {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 400;
-    content: "\f007";
-    padding-right: 3px;
 }
 
 .target.team::before {
@@ -182,23 +194,8 @@ main {
     margin-bottom: 40px;
 }
 
-h3 {
-    font-size: 26px;
-    font-weight: bolder;
-    margin-bottom: 10px;
-}
-
-h4 {
-    font-weight: bolder;
-    margin-bottom: 10px;
-}
-
 .grey-text{
     color: #4c6f88;
-}
-
-.enterprise-text {
-    margin-top: 25px;
 }
 
 .account-list {
@@ -209,17 +206,6 @@ h4 {
 .account-list li {
     font-weight: normal;
     padding: 15px 0;
-}
-
-.free-trial-account button {
-    width: 100%;
-    margin: 20px 0 25px ;
-}
-
-.hr {
-    width: 55px;
-    border: 1px #D0D0D3 solid;
-    margin: 30px 0 50px 0;
 }
 
 .user::before {
@@ -250,12 +236,33 @@ h4 {
     padding-right: 3px;
 }
 
+
+.free-trial-account button {
+    width: 100%;
+    margin: 20px 0 25px ;
+}
+
+.hr {
+    width: 55px;
+    border: 1px #D0D0D3 solid;
+    margin: 30px 0 50px 0;
+}
+
 .check::before {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     content: "\f00c";
     color: #0063FF;
     padding-right: 3px;
+}
+
+.content-box-lg {
+    margin-top: 50px;
+    border: 2px #D0D0D3 solid;
+}
+
+.enterprise-text {
+    margin-top: 25px;
 }
 /* / Pricing */
 
@@ -273,13 +280,13 @@ h4 {
 }
 
 .partner-text {
-    padding: 60px 0 0 30px;
+    padding: 60px 0 0 50px;
     width: 40%;
 }
 
 .partner-text p {
     line-height: 30px;
-    margin: 30px 0 25px 0;
+    padding: 30px 0 25px 0;
 }
 
 .partner-button {
@@ -291,8 +298,12 @@ h4 {
 /* / Partner */
 
 /* Function */
+.function-container {
+    margin: 80px auto 100px auto;
+}
+
 .function-title {
-    margin: 100px 0 30px 0;
+    padding-bottom: 40px;
 }
 
 .function-image img {
@@ -301,22 +312,39 @@ h4 {
 
 .function-text {
     padding: 20px 0 80px 0;
-    line-height: 22px;
 }
 /* Function */
 
 /* Network */
-
 .network-title {
-    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+
+.network-container {
+    margin-top: 50px;
 }
 
 .side-network {
-    width: 30%;
+    width: 30vw;
+}
+
+.side-network-image {
+    position: relative;
+    width: 15vw;
+    height: 15vw;
+}
+
+.side-network-image img {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .main-network {
-    width: 40%;
+    width: calc(100% - 60vw);
+    height: 30vw;
     background-color: #F5F5F5;
     padding: 40px 40px;
 }
@@ -326,24 +354,16 @@ h4 {
 }
 
 .main-network-image img {
-    width: 100%;
+    width: 90%;
 }
 
-.quote-author {
+.main-network-quote {
     padding: 40px 0 50px 0;
-}
-
-.network-image {
-    width: 50%;
-    text-align: center;
-}
-
-.network-image img {
-    width: 50%;
 }
 
 .bg-1 {
     background-color: #94D595;
+    border: 10px #CAEACB solid;
 }
 
 .bg-2 {
@@ -378,14 +398,34 @@ h4 {
     background-color: #ADD1EA;
 }
 
-.free-trial-container {
+.join-us-container {
     padding: 100px 0;
+}
+
+.join-us-text {
+    width: 75%;
+}
+
+.join-us-text h2 {
+    width: 50%;
+    color: #6B002B;
+}
+
+.join-us-button {
+    width: 25%;
+}
+
+.join-us-button button {
+    width: 100%;
+    background-color: #fff;
+    color: #000;
+    border: none;
 }
 /* / Network */
 
 /* Faq */
 .faq-container {
-    padding: 100px 0;
+    margin: 100px 0;
 }
 
 .faq-title {
@@ -409,22 +449,23 @@ h4 {
 }
 /* / Faq */
 
-/* / Main */
-
 /* Footer */
 footer {
     background-color: #000;
+}
+.footer-list-title {
+    padding-bottom: 20px;
 }
 
 .footer-list {
     width: calc(1400px / 5);
     color: #fff;
-    padding: 60px 0;
+    padding: 60px 0 80px 0;
 }
 
 .footer-list li {
     list-style: none;
-    padding: 4px 0;
+    padding: 5px 0;
 }
 
 .footer-list a {
@@ -441,5 +482,4 @@ footer {
     color: #808080;
     padding: 40px 0 30px 0;
 }
-
 /* / Footer */
