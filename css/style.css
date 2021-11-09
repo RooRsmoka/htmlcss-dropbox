@@ -48,6 +48,12 @@ body {
     padding: 8px 16px;
 }
 
+.white-button {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 15px 0;
+}
 .text-link {
     color: #2d7cfa;
     font-weight: bold;
@@ -262,7 +268,19 @@ nav {
 }
 
 .enterprise-text {
+    width: 71%;
+}
+
+.enterprise-paragraph {
     margin-top: 25px;
+}
+
+.enterprise-button {
+    width: 29%;
+}
+
+.enterprise-button button {
+    width: 100%;
 }
 /* / Pricing */
 
@@ -290,10 +308,9 @@ nav {
 }
 
 .partner-button {
-    font-weight: bold;
-    background-color: #fff;
     padding: 10px 20px;
     border: 1px #000 solid;
+    font-weight: bold;
 }
 /* / Partner */
 
@@ -417,9 +434,7 @@ nav {
 
 .join-us-button button {
     width: 100%;
-    background-color: #fff;
-    color: #000;
-    border: none;
+    padding: 8px 16px;
 }
 /* / Network */
 
